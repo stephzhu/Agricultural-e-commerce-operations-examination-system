@@ -1,0 +1,985 @@
+/*所有可以共通的样式都应该写在此文件中*/
+@import url(iconfont.css);
+
+/*************************************公共样式*********************************/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-weight: normal;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
+a {
+  color: #7e8c8d;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+}
+
+body {
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  overflow-y: scroll;
+}
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: inline-block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/*隐藏*/
+.dn {
+  display: none;
+}
+
+/* 考试须知 ——nwr */
+.instructions {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url(../images/instructions-bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.instructions .system-name {
+  text-align: center;
+  font-size: 28px;
+  line-height: 112px;
+  padding-top: 38px;
+  color: #fff;
+}
+
+.exam-instructions {
+  width: 1166px;
+  height: 636px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 29px rgba(69, 75, 241, 0.29);
+}
+
+.exam-instructions h4 {
+  line-height: 110px;
+  font-size: 24px;
+  color: #303133;
+  text-align: center;
+  font-weight: 600;
+}
+
+.exam-instructions p {
+  line-height: 30px;
+  font-size: 14px;
+  color: #999ca1;
+  margin: 0;
+}
+
+.exam-instructions p span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  background: #bae4d6;
+  color: #19a677;
+  margin: 0 7px 0 37px;
+}
+
+.default-btn {
+  background: #19a677;
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  outline: none;
+  display: block;
+  border: none;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.default-btn:hover {
+  background: #16956b;
+}
+
+.default-btn a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 40px;
+}
+
+.exam-instructions .understand-btn {
+  margin: 60px auto 0;
+}
+
+.copyright {
+  line-height: 78px;
+  font-size: 14px;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 首页 ——nwr */
+.flex {
+  display: flex;
+}
+
+.index-page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url(../images/index-bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.user-info {
+  height: 36px;
+  margin-top: 22px;
+  padding-right: 43px;
+}
+
+.user-info .user-head {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.user-info .user-name {
+  display: inline-block;
+  line-height: 36px;
+  color: #fff;
+  padding: 0 17px 0 13px;
+  vertical-align: middle;
+}
+
+.user-info .iconquit {
+  color: #fff;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.index-page .system-name {
+  font-size: 36px;
+  line-height: 36px;
+  padding-top: 114px;
+  text-align: center;
+  color: #fff;
+}
+
+.countdown {
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  background: rgba(40, 161, 120, 0.5);
+  margin: 30px auto 46px;
+  color: #ffe92e;
+  font-weight: 600;
+  padding: 0 20px;
+}
+
+.countdown a {
+  color: #288d67;
+  padding: 0 10px;
+}
+
+.exam-model {
+  margin: 0 150px;
+  height: 450px;
+}
+
+.electricity-model-cover {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  perspective: 1000px;
+  flex: 1;
+  margin-right: 30px;
+}
+
+.electricity-model {
+  border-radius: 8px;
+  background: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  transform-origin: top center;
+  will-change: transform;
+  transform: skewX(0.001deg);
+  transition: transform 0.35s ease-in-out;
+}
+
+.electricity-model-cover:hover .electricity-model {
+  transform: rotateX(7deg) translateY(-6px);
+}
+
+.electricity-model-cover:last-child {
+  margin-right: 0;
+}
+
+.electricity-model img {
+  padding: 70px 0 60px;
+}
+
+.electricity-model h4 {
+  color: #303133;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 24px;
+}
+
+.exam-model .model-info {
+  justify-content: center;
+  font-size: 14px;
+  padding: 0 5px;
+  flex-wrap: wrap;
+}
+
+.exam-model .model-info p {
+  color: #909399;
+  font-weight: 700;
+  display: flex;
+  flex-shrink: 0;
+  padding: 0 10px 5px;
+  text-align: center;
+}
+
+.exam-model .model-info p span {
+  color: #999ca1;
+}
+
+.exam-model .enter-btn {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*电商日常运营整体框架*/
+/*头部*/
+.ap-daily-header {
+  height: 60px;
+  line-height: 60px;
+  overflow: hidden;
+  border-bottom: 1px solid #ebeef5;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background: #fff;
+}
+
+.ap-daily-return {
+  width: 160px;
+  /* width: 10%; */
+  padding-left: 24px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.ap-daily-return img {
+  vertical-align: middle;
+  width: 18px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.ap-daily-return a {
+  font-size: 14px;
+  color: #909399;
+  font-family: "Arial", "Microsoft YaHei"
+}
+
+.ap-daily-logo {
+  float: left;
+  margin-right: 355px;
+}
+
+.ap-daily-logo a {
+  padding-left: 22px;
+  font-size: 20px;
+  font-weight: 700;
+  border-left: 1px solid #ccc;
+  color: #303133;
+}
+
+.ap-daily-logo a::after {
+  content: '';
+  display: inline-block;
+  background: url("../images/ap-daily-chuj.png") no-repeat;
+  width: 48px;
+  height: 22px;
+  background-size: 80%;
+  -moz-background-size: 80%;
+  -ms-background-size: 80%;
+  -webkit-background-size: 80%;
+  position: relative;
+  top: 6px;
+  left: 5px
+}
+
+.ap-daily-countdown {
+  float: left;
+}
+
+.ap-daily-countdown span {
+  font-size: 14px;
+  color: #a1a4a9;
+}
+
+#ap-daily-time span {
+  color: red;
+  font-weight: 700;
+}
+
+.ap-daily-admin {
+  float: left;
+}
+
+.ap-daily-maskdet {
+  float: right;
+  border-left: 1px solid #ebeef5;
+  width: 162px;
+}
+
+.ap-daily-maskdetimghide {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  top: 12px;
+  left: -14px;
+  width: 123px;
+  height: 34px;
+}
+
+.ap-daily-maskdet span {
+  font-size: 14px;
+}
+
+.ap-daily-maskdet i {
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.ap-daily-maskdet .iconprompt {
+  margin-right: 8px;
+}
+
+.ap-daily-maskdet .iconprompt {
+  margin-left: 25px;
+}
+
+.ap-daily-admin {
+  float: right;
+  margin-right: 25px;
+}
+
+.ap-daily-admin img {
+  vertical-align: middle;
+  padding: 0 8px;
+}
+
+.ap-daily-admin span {
+  color: #c0c4cc;
+  font-size: 18px;
+}
+
+.ap-daily-main {
+  background: #e4e7ed;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  padding-top: 60px;
+}
+
+/*左侧导航*/
+.ap-daily-navleft {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.ap-daily-rcyy {
+  background: #fff;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  line-height: 60px;
+}
+
+.ap-daily-navleft p {
+  color: #fff;
+  padding: 22px 0;
+  border-bottom: 1px solid #20bb89;
+  font-size: 16px;
+}
+
+
+.ap-daily-navleftlist {
+  padding-top: 22px;
+}
+
+.ap-daily-navleftlist ul li .ap-daily-navleftlistone,
+.ap-daily-navleftlist ul li .ap-daily-navleftlisttwo,
+.ap-daily-navleftlist ul li .ap-daily-navleftlistthree {
+  color: #76c4a9;
+  display: inline-block;
+  cursor: text;
+  font-size: 14px;
+}
+
+.ap-daily-navleftlist ul li a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.ap-daily-navleftlist ul li i {
+  position: absolute;
+  left: 22px;
+  color: #fff;
+}
+
+.ap-daily-navleftlist ul li {
+  position: relative;
+  padding: 14px 0 14px 50px;
+  text-align: left;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.ap-daily-navleftlist ul li.active {
+  background: #fff;
+  border-left: 3px solid #f9b303;
+}
+
+.ap-daily-navleftlist ul li.active a {
+  color: #19a677;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.ap-daily-navleftlist ul li:hover {
+  background: #fff;
+  border-left: 3px solid #f9b303;
+}
+
+.ap-daily-navleftlist ul li:hover a {
+  color: #19a677;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.ap-daily-navleftlist ul li:first-child:hover {
+  background: none !important;
+  border-left: none;
+  color: #76c4a9
+}
+
+.ap-daily-navleftlist ul li:first-child:hover a {
+  background: none !important;
+  color: #76c4a9;
+  font-weight: 300;
+}
+
+/*中间区域及其版权*/
+.ap-daily-contain {
+  margin: 20px 20px 0 180px;
+  box-sizing: border-box;
+  background: #fff;
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.ap-daily-maincont .ap-daily-basicinfo p {
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  font-size: 16px;
+  color: #606266;
+}
+
+.ap-daily-label {
+  height: 46px;
+  line-height: 46px;
+  position: relative;
+  margin: 42px 0 22px 0;
+}
+
+.ap-daily-label input {
+  line-height: 42px;
+  height: 42px;
+  padding-right: 54px;
+}
+
+.ap-daily-formname {
+  width: 156px;
+  display: inline-block;
+  float: left;
+  text-align: right;
+  color: #909399;
+  padding-right: 20px;
+  font-size: 14px;
+}
+
+#ap-daily-syzs {
+  position: absolute;
+  top: 0;
+  right: 16px;
+}
+
+#ap-daily-syzs {
+  color: #d6d6d6;
+  ;
+}
+
+#ap-daily-syzs span {
+  color: #000;
+  font-size: 14px;
+}
+
+.ap-daily-labelarea {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.ap-daily-bcbtn {
+  background: #ff8f1e;
+  width: 106px;
+  height: 42px;
+  border: 0;
+  border-radius: 3px;
+  margin-left: 156px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/*版权*/
+.ap-daily-copyright {
+  text-align: center;
+  height: 60px;
+  color: #666;
+  background: #e4e7ed;
+  overflow: hidden;
+  padding: 25px 0 25px 0;
+  width: 100%;
+}
+
+/*右侧展开菜单*/
+.ap-daily-rightcont {
+  padding: 16px 0px;
+}
+
+.ap-daily-maskone {
+  line-height: 44px;
+  background: #f3f4f5;
+  padding: 0px 25px;
+  color: #19a677;
+  font-size: 14px;
+  margin-bottom: 18px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+.ap-daily-maskone i {
+  float: right;
+  color: #c9ccd3;
+}
+
+.ap-daily-maskscore {
+  height: 44px;
+  font-weight: 700;
+  line-height: 44px;
+  font-size: 14px;
+  margin: 0 !important;
+  color: #303133;
+}
+
+.ap-mask-det p {
+  color: #666;
+  line-height: 24px;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: "Arial", "Microsoft YaHei"
+}
+
+.ap-mask-det {
+  padding: 0px 25px 20px 25px;
+  display: none;
+}
+
+.ap-daily-maskscore span {
+  color: #f67d53 !important;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.ap-mask-det ul li {
+  height: 38px;
+  line-height: 38px;
+  padding-left: 15px;
+  margin-bottom: 8px;
+}
+
+.ap-mask-det ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.ap-mask-det ul li:hover {
+  background: #f2f6fc;
+}
+
+.ap-mask-det ul li img {
+  vertical-align: middle;
+}
+
+.ap-mask-det ul li i {
+  visibility: hidden;
+  float: right;
+  margin: 0px 12px 0 0;
+  color: #19a677;
+}
+
+.ap-mask-det ul li:hover i {
+  visibility: visible;
+}
+
+.ap-daily-rightcont .on span {
+  color: #19a677;
+}
+
+.ap-daily-rightcont ul li span {
+  color: #606266;
+  padding-left: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  width: 270px;
+  /* vertical-align: middle; */
+}
+
+.ap-daily-copyright p {
+  font-size: 14px;
+  color: #999;
+}
+
+/* 电商日常运营头部 */
+.ap-daily-bg {
+  background-color: #e4e7ed;
+}
+
+.ap-daily-header {
+  background-color: #FFFFFF;
+  height: 64px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 1px solid #dcdfe6;
+}
+
+.ap-daily-sider {
+  background-color: #19a678;
+  position: fixed;
+  z-index: 1000;
+  top: 65px;
+  width: 160px;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.ap-daily-wrapper {
+  margin: 84px 20px 0 180px;
+  background-color: #FFFFFF;
+  min-height: calc(100vh - 140px);
+}
+
+.ap-daily-footer {
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  color: #999999;
+}
+
+.ap-daily-taskbar {
+  background-color: #FFFFFF;
+  width: 400px;
+  border-left: 1px solid #dcdfe6;
+  overflow-y: auto;
+  position: fixed;
+  z-index: 1000;
+  top: 65px;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  transition: all 0.5s;
+}
+
+.ap-daily-taskbar.fold {
+  right: -401px;
+}
+
+/* 单选多选 */
+input[type=checkbox],
+input[type=checkbox]:focus,
+input[type=radio],
+input[type=radio]:focus {
+  width: 16px;
+  height: 16px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 2px;
+}
+
+input[type=checkbox],
+input[type=checkbox]:focus {
+  background: url(../images/icon.png) 0 0 no-repeat;
+}
+
+input[type=radio],
+input[type=radio]:focus {
+  background: url(../images/icon.png) 0 -35px no-repeat;
+}
+
+input[type=checkbox]:checked {
+  background-position: -45px 0;
+}
+
+input[type=checkbox]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+input[type=radio]:checked {
+  background-position: -45px -35px;
+}
+
+input[type=radio]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+[type=checkbox]::-ms-check,
+[type=radio]::-ms-check {
+  display: none;
+}
+
+.checkbox label,
+.radio label {
+  padding-left: 26px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+}
+
+.checkbox input[type=checkbox],
+.checkbox-inline input[type=checkbox],
+.radio input[type=radio],
+.radio-inline input[type=radio] {
+  margin-left: -26px;
+}
+
+.ap-daily-toggle {
+  cursor: pointer;
+}
+
+/*弹出窗按钮样式*/
