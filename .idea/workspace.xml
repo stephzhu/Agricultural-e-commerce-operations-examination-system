@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="394c5b68-59a6-4204-b6e6-b5b34e83e119" name="默认的" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="02设计" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1r5wd7IEZAqNsUnXeYk2FxNq6Hf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/HTML/css" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\02设计\HTML\script" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\02设计\HTML\css" />
+      <recent name="C:\Users\Administrator\Desktop\02设计\HTML\script" />
+      <recent name="C:\Users\Administrator\Desktop\02设计\HTML\exam\daily" />
+    </key>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="394c5b68-59a6-4204-b6e6-b5b34e83e119" name="默认的" comment="" />
+      <created>1618279342821</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618279342821</updated>
+      <workItem from="1618279344156" duration="26081000" />
+      <workItem from="1618309247887" duration="1560000" />
+      <workItem from="1618362427393" duration="27722000" />
+      <workItem from="1618447827976" duration="492000" />
+      <workItem from="1618448504639" duration="688000" />
+      <workItem from="1618449206243" duration="1473000" />
+      <workItem from="1618461571695" duration="1203000" />
+      <workItem from="1618463755739" duration="5502000" />
+      <workItem from="1618470293167" duration="7306000" />
+      <workItem from="1618478053147" duration="2772000" />
+      <workItem from="1618534666074" duration="37107000" />
+      <workItem from="1618575197273" duration="248000" />
+      <workItem from="1618793747534" duration="11882000" />
+      <workItem from="1618806110132" duration="15942000" />
+      <workItem from="1618879857075" duration="35285000" />
+      <workItem from="1618966041706" duration="35293000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="208" key="SettingsEditor" timestamp="1619003050479">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="446" y="208" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1619003050479" />
+    <state x="621" y="247" key="run.anything.popup" timestamp="1618975771026">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="621" y="247" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618975771026" />
+    <state x="628" y="254" width="672" height="678" key="search.everywhere.popup" timestamp="1619002790960">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="628" y="254" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1619002790960" />
+  </component>
+</project>

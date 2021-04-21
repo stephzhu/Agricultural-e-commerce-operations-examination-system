@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+    <link href="../../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../../css/daily.css">
+	</head>
+	<body class="ap-daily-bg">
+		<div class="wrapper">
+			<!-- 头部 -->
+			<header class="ap-daily-header">
+                <!--    返回实训任务-->
+                <div class="ap-daily-return">
+                    <i class="iconfont iconreturn"></i>
+                    <a href="../../index.html">返回任务首页</a>
+                </div>
+                <!--    等级考试logo-->
+                <div class="ap-daily-logo">
+                    <a href="#">
+                        农产品电商运营职业技能等级证书考试系统
+                    </a>
+                </div>
+                <!--    倒计时-->
+                <div class="ap-daily-countdown">
+                    <span>倒计时:</span>&nbsp;<span id="ap-daily-time" class="timer"><span id="_h"></span><span id="_m"></span><span
+                        id="_s"></span></span>
+                </div>
+                <!--   任务详情 -->
+                <div class="ap-daily-maskdet">
+                    <a href="#"> <i class="iconfont iconprompt"></i>
+                        <a href="#"><span>任务详情</span></a>
+                        <span class="ap-daily-toggle"><i class="iconfont icondevelop"></i></span>
+                </div>
+                <!--    账号信息及其退出-->
+                <div class="ap-daily-admin">
+                    <a href="#"> <img src="../../images/ap-daily-admin.png" alt=""></a>
+                    <span>admin</span>
+                    <a href="#"> <img class="" src="../../images/ap-daily-tuic.png" alt=""></a>
+                </div> 
+			</header>
+			<!-- 头部 -->
+			<!-- 左边菜单栏 -->
+            <section class="ap-daily-sider">
+                <div class="ap-daily-navleft">
+                    <!--        日常运营-->
+                    <div class="ap-daily-rcyy">
+                        <img src="../../images/ap-daily-rcyy.png" alt="">
+
+                    </div>
+                    <p>电商日常运营</p>
+                    <div class="ap-daily-navleftlist">
+                        <ul>
+                            <li><a class="ap-daily-navleftlistone" href="javasctipt:void(0)"><i
+                                    class="iconfont icontrim"></i>店铺装修</a></li>
+                            <li ><a href="basicinfo.html">基础信息</a></li>
+                            <li><a href="goodsclassifiy.html">商品分类</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="ap-daily-navleftlisttwo" href="javasctipt:void(0)"><i class="iconfont icongoods"></i>商品管理</a>
+                            </li>
+                            <li ><a href="goodsfbrelease.html">商品发布</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="ap-daily-navleftlistthree" href="javasctipt:void(0)"><i
+                                    class="iconfont iconcollate"></i>交易管理</a>
+                            </li>
+                            <li  class="active"><a href="checkbilling.html">核对账单设置</a></li>
+                            <li ><a href="#">订单管理</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+			<!-- 左边菜单栏 -->
+			<!-- 头部 -->
+			<!-- 内容 -->
+			<section class="ap-daily-wrapper">
+				<div class="ap-daily-theme">核对账单设置</div>
+				<div class="ap-daily-checkbilling-form">
+					<div class="form-group">
+						<label class="control-label">开启自动核单：</label>
+						<div class="col-sm-10">
+							<div class="checkbox">
+								<label><input type="checkbox" checked="checked" value=""><span>对静默订单自动核单核址</span></label>
+							</div>
+							<div class="child-option">
+								<div class="radio">
+									<label><input type="radio" checked="checked" name="send"><span>由服务助手自动发送</span></label>
+								</div>
+								<div class="radio">
+									<label class="select-time">
+										<input type="radio" name="send">
+										<span>由</span>
+										<select class="form-control">
+											<option>小博</option>
+										</select>
+										<span>发送消息</span>
+									</label>
+								</div>
+							</div>
+							<div class="checkbox">
+								<label><input type="checkbox" value=""><span>对有过咨询行为的订单自动核单核址（由买家的最近联系人帐号发送）</span></label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label">自动核单时间： </label>
+						<div class="col-sm-10">
+							<div class="select-time">
+								<span>每天</span>
+								<select class="form-control">
+									<option>8</option>
+								</select>
+								<span>时至</span>
+								<select class="form-control">
+									<option>次日12</option>
+								</select>
+								<span>时，发送核单信息</span>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label">设置核单卡片：</label>
+						<div class="col-sm-10">
+							<div class="inline-item">
+								<div class="checkbox">
+									<label><input type="checkbox" value=""><span>收货人</span></label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" checked="checked" value=""><span>电话号码</span></label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value=""><span>固定电话</span></label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value=""><span>详细地址</span></label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value=""><span>邮政编码</span></label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value=""><span>买家留言</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label">信息有误处理： </label>
+						<div class="col-sm-10">
+							<div class="theme">当订单信息有误时，点击"修改"按键，自动回复一段话术 (建议大促时启用)</div>
+							<div class="option">
+								<div class="radio">
+									<label><input type="radio" name="info"><span>亲~ 掌柜外出发货，非常抱歉不能及时回复您的信息，您可以在小店先慢慢挑选，一定要等掌柜哦!掌柜回来马上回复!</span></label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="info"><span>亲~ 不好意思，现在忙于打包发货中，有事请留言，晚点给你回复，谢谢!</span></label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="info"><span>亲~ 客人比较多哦，不要着急呢，我会一个个回复哦，我已经变成三头六臂了 淘—巧—网，淘宝开店必上网!</span></label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="info"><span>亲~ 我们店现在有优惠活动，请详细浏览一下小店的公告，不要错过哦。</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label"></label>
+						<div class="col-sm-10">
+							<button type="button" class="btn-save">保存</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 内容 -->
+			<!-- 任务详情 -->
+			<section class="ap-daily-taskbar">
+               <div class="ap-daily-rightcont">
+                   <h3 class="ap-daily-maskone">任务1：<span>直播预告制作与发布</span><i class="iconfont iconcomplete"></i></h3>
+                   <div class="ap-mask-det">
+                       <h3 class="ap-daily-maskscore">题目总分 <span>40分</span></h3>
+                       <h3 class="ap-daily-maskscore">任务背景 </h3>
+                       <p>农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题</p>
+                       <h3 class="ap-daily-maskscore">任务资料 </h3>
+                       <ul>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-ppt.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-xls.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-jpg.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-word.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-video.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-ysb.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-pdf.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+               
+                       </ul>
+                       <h3 class="ap-daily-maskscore">任务背景 </h3>
+                       <p>请下载素材包，根据任务背景完成活动报名及相关信息设置，
+                           主要包括以下三个方面。（40分） </p>
+                       <p>1）撰写直播脚本 2）粉丝互动 </p>
+                       <p>2）粉丝互动 </p>
+                   </div>
+                   <h3 class="ap-daily-maskone">任务1：<span>直播预告制作与发布</span><i class="iconfont iconcomplete"></i></h3>
+                   <div class="ap-mask-det">
+                       <h3 class="ap-daily-maskscore">题目总分 <span>40分</span></h3>
+                       <h3 class="ap-daily-maskscore">任务背景 </h3>
+                       <p>农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题</p>
+                       <h3 class="ap-daily-maskscore">任务资料 </h3>
+                       <ul>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-ppt.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-xls.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-jpg.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-word.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-video.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-ysb.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-pdf.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+               
+                       </ul>
+                       <h3 class="ap-daily-maskscore">任务背景 </h3>
+                       <p>请下载素材包，根据任务背景完成活动报名及相关信息设置，
+                           主要包括以下三个方面。（40分） </p>
+                       <p>1）撰写直播脚本 2）粉丝互动 </p>
+                       <p>2）粉丝互动 </p>
+                   </div>
+                   <h3 class="ap-daily-maskone">任务1：<span>直播预告制作与发布</span><i class="iconfont iconcomplete"></i></h3>
+                   <div class="ap-mask-det">
+                       <h3 class="ap-daily-maskscore">题目总分 <span>40分</span></h3>
+                       <h3 class="ap-daily-maskscore">任务背景 </h3>
+                       <p>农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题</p>
+                       <h3 class="ap-daily-maskscore">任务资料 </h3>
+                       <ul>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-ppt.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-xls.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-jpg.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-word.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-video.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-ysb.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-pdf.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+               
+                       </ul>
+                       <h3 class="ap-daily-maskscore">任务背景 </h3>
+                       <p>请下载素材包，根据任务背景完成活动报名及相关信息设置，
+                           主要包括以下三个方面。（40分） </p>
+                       <p>1）撰写直播脚本 2）粉丝互动 </p>
+                       <p>2）粉丝互动 </p>
+                   </div>
+               
+                   <h3 class="ap-daily-maskone">任务1：<span>直播预告制作与发布</span><i class="iconfont iconcomplete"></i></h3>
+                   <div class="ap-mask-det">
+                       <h3 class="ap-daily-maskscore">题目总分 <span>40分</span></h3>
+                       <h3 class="ap-daily-maskscore">任务背景 </h3>
+                       <p>农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题</p>
+                       <h3 class="ap-daily-maskscore">任务资料 </h3>
+                       <ul>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-ppt.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-xls.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-jpg.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-word.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-video.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-ysb.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+                           <li><a href="">
+                               <img src="../../images/ap-daily-pdf.png" alt="">
+                               <span>看盒马如何改变农产品流通模式.ppt</span>
+                               <i class="iconfont icondownload"></i>
+                           </a></li>
+               
+                       </ul>
+                       <h3 class="ap-daily-maskscore">任务背景 </h3>
+                       <p>请下载素材包，根据任务背景完成活动报名及相关信息设置，
+                           主要包括以下三个方面。（40分） </p>
+                       <p>1）撰写直播脚本 2）粉丝互动 </p>
+                       <p>2）粉丝互动 </p>
+                   </div>
+               </div>
+			</section>
+			<!-- 任务详情 -->
+			<!-- 版权 -->
+			<section class="ap-daily-footer">
+				Copyright © 2021 博导股份. All rights reserved.
+			</section>
+			<!-- 版权 -->
+		</div>
+		<script src="../../script/jquery.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.js"></script>
+		<script src="../../script/base.js"></script>
+		<script src="../../script/daily.js"></script>
+	</body>
+</html>

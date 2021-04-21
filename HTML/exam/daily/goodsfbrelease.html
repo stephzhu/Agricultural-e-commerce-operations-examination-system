@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/daily.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/layer.css"/>
+</head>
+<body class="ap-daily-bg">
+<div class="wrapper">
+    <!-- 头部 -->
+    <header class="ap-daily-header">
+
+        <!--头部区域-->
+        <div class="ap-daily-header">
+            <!--    返回实训任务-->
+            <div class="ap-daily-return">
+                <i class="iconfont iconreturn"></i>
+                <a href="../../index.html">返回任务首页</a>
+            </div>
+            <!--    等级考试logo-->
+            <div class="ap-daily-logo">
+                <a href="#">
+                    农产品电商运营职业技能等级证书考试系统
+                </a>
+            </div>
+            <!--    倒计时-->
+            <div class="ap-daily-countdown">
+                <span>倒计时:</span>&nbsp;<span id="ap-daily-time" class="timer"><span id="_h"></span><span id="_m"></span><span
+                    id="_s"></span></span>
+            </div>
+
+            <!--   任务详情 -->
+            <div class="ap-daily-maskdet">
+                <a href="#"> <i class="iconfont iconprompt"></i>
+                    <a href="#"><span>任务详情</span></a>
+                    <span class="ap-daily-toggle"><i class="iconfont icondevelop"></i></span>
+
+            </div>
+            <!--    账号信息及其退出-->
+            <div class="ap-daily-admin">
+                <a href="#"> <img src="../../images/ap-daily-admin.png" alt=""></a>
+                <span>admin</span>
+                <a href="#"> <img class="" src="../../images/ap-daily-tuic.png" alt=""></a>
+
+            </div>
+        </div>
+    </header>
+    <!-- 头部 -->
+    <!-- 左边菜单栏 -->
+    <section class="ap-daily-sider">
+        <div class="ap-daily-navleft">
+            <!--        日常运营-->
+            <div class="ap-daily-rcyy">
+                <img src="../../images/ap-daily-rcyy.png" alt="">
+
+            </div>
+            <p>电商日常运营</p>
+            <div class="ap-daily-navleftlist">
+                <ul>
+                    <li><a class="ap-daily-navleftlistone" href="javasctipt:void(0)"><i
+                            class="iconfont icontrim"></i>店铺装修</a></li>
+                    <li><a href="basicinfo.html">基础信息</a></li>
+                    <li><a href="goodsclassifiy.html">商品分类</a></li>
+                </ul>
+                <ul>
+                    <li><a class="ap-daily-navleftlisttwo" href="javasctipt:void(0)"><i class="iconfont icongoods"></i>商品管理</a>
+                    </li>
+                    <li class="active"><a href="goodsfbrelease.html">商品发布</a></li>
+                </ul>
+                <ul>
+                    <li><a class="ap-daily-navleftlistthree" href="javasctipt:void(0)"><i
+                            class="iconfont iconcollate"></i>交易管理</a>
+                    </li>
+                    <li><a href="checkbilling.html">核对账单设置</a></li>
+                    <li><a href="#">订单管理</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 左边菜单栏 -->
+    <!-- 头部 -->
+    <!-- 内容 -->
+    <section class="ap-daily-wrapper">
+        <div class="ap-daily-theme">商品发布</div>
+        <div class="ap-daily-checkbilling-form daily-goodsclassify-form daily-goodsrelease-form daily-goodsserve">
+            <div class="form-group ">
+                <span class="dialy-kc">基本信息</span>
+            </div>
+            <div class="form-group daily-ggkc ">
+                <label class="control-label">商品标题： </label>
+                <div class="col-sm-10">
+                    <div class="select-time daily-relase">
+                        <label for="">
+
+                            <input type="text" class="form-control" placeholder="请输入商品标题，不超过60个字">
+
+
+                            <div>
+
+                                <span class="daily-relasessyl">0<span class="daily-relasesyzs">/60</span></span>
+                            </div>
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="form-group daily-ggkc">
+                <label class="control-label">商品图片： </label>
+                <div class="col-sm-10">
+                    <div class="select-time">
+                        <span>建议上传高宽相等且大于480px，大小1M内</span>
+
+                    </div>
+                    <div class="form-group daily-add daily-xzpic">
+                        <a href="javascript:void(0)">
+                            <i class="iconfont iconadd"></i>
+                            <span>选择图片</span>
+                        </a>
+
+                    </div>
+                    <div class="form-group daily-piclist">
+                        <ul>
+                            <li><a href="">
+                                <img src="../../images/daily-spfb1.png" alt="">
+                                <i></i>
+                            </a></li>
+                            <li><a href="">
+                                <img src="../../images/daily-spfb2.png" alt="">
+                                <i></i>
+                            </a></li>
+                            <li><a href="">
+                                <img src="../../images/daily-spfb3.png" alt="">
+                                <i></i>
+                            </a></li>
+                            <li><a href="">
+                                <img src="../../images/daily-spfb4.png" alt="">
+                                <i></i>
+                            </a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group daily-ggkc">
+                <label class="control-label">商品详情： </label>
+                <div class="col-sm-10">
+                    <div class="select-time">
+                        <span>详情页建议宽度为640px，单张图片大小不能超过2MB</span>
+
+                    </div>
+                    <div class="form-group">
+
+                        <img src="../../images/daily-ueditor.png" alt="">
+
+
+                    </div>
+                </div>
+
+            </div>
+
+<!--            <div class="form-group ">-->
+<!--                <span class="dialy-kc">规格与库存</span>-->
+<!--            </div>-->
+            <!--            <div class="dialy-kccontainer">-->
+            <div class="form-group ">
+                <span class="dialy-kc">规格与库存</span>
+            </div>
+            <div class="form-group daily-ggkc daily-ggkcbox">
+                <label class="control-label">商品规格： </label>
+                <div class="col-sm-10">
+                    <div class="select-time">
+                        <span>最多添加2个商品规格，规格参数不超过5个</span>
+
+                    </div>
+                    <div class="form-group daily-add daily-addggbox">
+                        <a href="javascript:void(0)">
+                            <i class="iconfont iconadd"></i>
+                            <span id="daily-addgg">添加规格</span>
+                        </a>
+
+                    </div>
+
+<!--                    <div class="form-group daily-ggsx">-->
+<!--                        <div class="daily-delete">-->
+<!--                            <select name="" id="" class="form-control">-->
+<!--                                <option value="">请选择规格属性</option>-->
+<!--                            </select>-->
+<!--                            <span>删除</span>-->
+<!--                        </div>-->
+<!--                        <div class="daily-gzadd">-->
+<!--                            <div class="daily-gzaddbox">-->
+<!--                                <select name="" id="" class="form-control selected">-->
+<!--                                    <option value="">5斤装核桃酸奶饮料</option>-->
+<!--                                </select>-->
+<!--                                <i></i></div>-->
+<!--                            <div class="daily-gzaddbox">-->
+<!--                                <select name="" id="" class="form-control">-->
+<!--                                    <option value="">请选择规格参数</option>-->
+<!--                                </select></div>-->
+<!--                            <div class="daily-gzaddbox"><select name="" id="" class="form-control">-->
+<!--                                <option value="">请选择规格参数</option>-->
+<!--                            </select></div>-->
+<!--                            <div class="daily-gzaddbox"><select name="" id="" class="form-control">-->
+<!--                                <option value="">请选择规格参数</option>-->
+<!--                            </select></div>-->
+<!--                            <div class="daily-gzaddbox"><select name="" id="" class="form-control">-->
+<!--                                <option value="">请选择规格参数</option>-->
+<!--                            </select></div>-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+
+
+                </div>
+
+            </div>
+
+            <!--            <div class="dialy-kccontainer">-->
+
+            <div class="form-group daily-ggkc">
+                <label class="control-label">价格及库存： </label>
+                <div class="col-sm-10">
+                    <div class="select-time">
+                        <span>请如实填写库存信息，以确保商品可以再承诺发货时间内发出，避免可能得物流违规</span>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-group daily-ggkc">
+                <label class="control-label"></label>
+                <div class="col-sm-10">
+                    <div class="select-time">
+                        <span class="daily-blsztext">批量设置</span>
+
+                        <div class="daily-plsz">
+                            <select name="" id="" class="form-control">
+                                <option value="">重量</option>
+                                <option value="">3斤</option>
+                                <option value="">5斤</option>
+                                <option value="">10斤</option>
+                            </select>
+                            <select name="" id="" class="form-control">
+                                <option value="">尺寸</option>
+                                <option value="">8cm</option>
+                                <option value="">10cm</option>
+                                <option value="">12斤</option>
+                            </select>
+                            <input class="form-control" placeholder="请输入库存" type="text" name="" id="">
+                            <input class="form-control" placeholder="请输入拼单价" type="text" name="" id="">
+                            <input class="form-control" placeholder="请输入单买价" type="text" name="" id="">
+                            <a href="">添加</a>
+                        </div>
+                    </div>
+                    <div class="select-time dialy-table">
+                        <table>
+
+                            <tbody><tr>
+                                <th>重量</th>
+                                <th>尺寸</th>
+                                <th>库存</th>
+                                <th>拼单价</th>
+                                <th>单买价</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">3斤</td>
+                                <td rowspan="1">12厘米</td>
+                                <td rowspan="1"><input class="form-control" placeholder="请输入库存" type="text" name="" id=""></td>
+                                <td rowspan="1"><input class="form-control" placeholder="请输入拼单价" type="text" name="" id=""></td>
+                                <td rowspan="1"><input class="form-control" placeholder="请输入单买价" type="text" name="" id=""></td>
+
+
+                            </tr>
+                            <tr>
+                                <td rowspan="1">12厘米</td>
+                                <td rowspan="1"><input class="form-control" placeholder="请输入库存" type="text" name="" id=""></td>
+                                <td rowspan="1"><input class="form-control" placeholder="请输入拼单价" type="text" name="" id=""></td>
+                                <td rowspan="1"><input class="form-control" placeholder="请输入单买价" type="text" name="" id=""></td>
+
+                            </tr>
+                            <tr>
+                                <td rowspan="1">12厘米</td>
+                                <td rowspan="1"><input class="form-control" placeholder="请输入库存" type="text" name="" id=""></td>
+                                <td rowspan="1"><input class="form-control" placeholder="请输入拼单价" type="text" name="" id=""></td>
+                                <td rowspan="1"><input class="form-control" placeholder="请输入单买价" type="text" name="" id=""></td>
+
+                            </tr>
+
+                            <!--                            <tr>-->
+                            <!--                                <td>3斤</td>-->
+                            <!--                                <td>12厘米</td>-->
+                            <!--                                <td><input class="form-control" placeholder="请输入库存" type="text" name="" id=""></td>-->
+                            <!--                                <td><input class="form-control" placeholder="请输入拼单价" type="text" name="" id=""></td>-->
+                            <!--                                <td><input class="form-control" placeholder="请输入单买价" type="text" name="" id=""></td>-->
+                            <!--                            </tr>-->
+                            </tbody></table>
+                    </div>
+
+
+
+                    <div class=" dialy-bc">
+                        <button class="btn btn-success">保存</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group daily-ggkc">
+                <label class="control-label">商品市场价： </label>
+                <div class="col-sm-10">
+                    <div class="select-time dialy-spscj">
+                        <input type="text" class="form-control" placeholder="应高于商品最大单买价">
+                        <span>元</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-group ">
+                <span class="dialy-kc">服务与承诺：</span>
+            </div>
+            <div class="form-group daily-ggkc daily-fwcnyf">
+                <label class="control-label">运费模板： </label>
+                <div class="col-sm-10">
+                    <div class="select-time daily-relase">
+                        <select name="" id="tabs" class="form-control">
+                            <option value="">标准模板</option>
+                            <option value="">非偏远地区包邮默认模板</option>
+                            <option value="">不包邮默认模板</option>
+                        </select>
+
+                    </div>
+                    <div class="form-group chanpin0">
+                        <div class="select-time daily-areaby">
+
+
+                            <div class="daily-areabybox">
+                                <div class="daily-areabyboxleft">包邮配送地区</div>
+                                <div class="daily-areabyboxright daily-bypsdq">
+                                    <div class="daily-area daily-wxz">
+                                        未选择地区
+                                    </div>
+                                    <div class="daily-area daily-yxz-city">
+
+                                    </div>
+                                    <div class="daily-editor daily-byeditor">
+                                        编辑
+                                    </div>
+                                    <div class="daily-area daily-xzdt">
+                                        <span class="daily-releasexz">选择地区</span>
+                                        <span class="daily-releaseyxz">已选<span class="dailoy-yxznum">2</span>个区域</span>
+                                        <div class="form-group daily-bypsdq-city">
+                                            <span class="areazm">ABCFG </span>
+                                            <label for="daily-area1">
+                                                <input type="checkbox" id="daily-area1" value="北京"><span>北京</span>
+                                            </label>
+                                            <label for="daily-area2">
+                                                <input type="checkbox" id="daily-area2" value="安徽"><span>安徽</span>
+                                            </label>
+                                            <label for="daily-area3">
+                                                <input type="checkbox" id="daily-area3" value="重庆"><span>重庆</span>
+                                            </label>
+                                            <label for="daily-area4">
+                                                <input type="checkbox" id="daily-area4" value="福建"><span>福建</span>
+                                            </label>
+                                            <label for="daily-area5">
+                                                <input type="checkbox" id="daily-area5" value="甘肃"><span>甘肃</span>
+                                            </label>
+                                            <label for="daily-area6">
+                                                <input type="checkbox" id="daily-area6" value="广东"><span>广东</span>
+                                            </label>
+                                            <label for="daily-area7">
+                                                <input type="checkbox" id="daily-area7" value="广西"><span>广西</span>
+                                            </label>
+                                            <label for="daily-area8">
+                                                <input type="checkbox" id="daily-area8" value="贵州"><span>贵州</span>
+                                            </label>
+                                            <label for="daily-area9">
+                                                <input type="checkbox" id="daily-area9" value="贵州"><span>贵州</span>
+                                            </label>
+                                            <br>
+                                            <span class="areazm">HJ</span>
+                                            <label for="daily-area10">
+                                                <input type="checkbox" id="daily-area10" value="海南"><span>海南</span>
+                                            </label>
+                                            <label for="daily-area11">
+                                                <input type="checkbox" id="daily-area11" value="河南"><span>河南</span>
+                                            </label>
+                                            <label for="daily-area12">
+                                                <input type="checkbox" id="daily-area12" value="河北"><span>河北</span>
+                                            </label>
+                                            <label for="daily-area13">
+                                                <input type="checkbox" id="daily-area13" value="黑龙江"><span>黑龙江</span>
+                                            </label>
+                                            <label for="daily-area14">
+                                                <input type="checkbox" id="daily-area14" value="湖北"><span>湖北</span>
+                                            </label>
+                                            <label for="daily-area15">
+                                                <input type="checkbox" id="daily-area15" value="湖南"><span>湖南</span>
+                                            </label>
+                                            <label for="daily-area16">
+                                                <input type="checkbox" id="daily-area16" value="吉林"><span>吉林</span>
+                                            </label>
+                                            <label for="daily-area17">
+                                                <input type="checkbox" id="daily-area17" value="江苏"><span>江苏</span>
+                                            </label>
+                                            <label for="daily-area18">
+                                                <input type="checkbox" id="daily-area18" value="江西"><span>江西</span>
+                                            </label>
+                                            <br>
+                                            <span class="areazm">LNQS</span>
+                                            <label for="daily-area19">
+                                                <input type="checkbox" id="daily-area19" value="辽宁"><span>辽宁</span>
+                                            </label>
+                                            <label for="daily-area20">
+                                                <input type="checkbox" id="daily-area20" value="内蒙古"><span>内蒙古</span>
+                                            </label>
+                                            <label for="daily-area21">
+                                                <input type="checkbox" id="daily-area21" value="宁夏"><span>宁夏</span>
+                                            </label>
+                                            <label for="daily-area22">
+                                                <input type="checkbox" id="daily-area22" value="青海"><span>青海</span>
+                                            </label>
+                                            <label for="daily-area23">
+                                                <input type="checkbox" id="daily-area23" value="山东"><span>山东</span>
+                                            </label>
+                                            <label for="daily-area24">
+                                                <input type="checkbox" id="daily-area24" value="山西"> <span>山西</span>
+                                            </label>
+                                            <label for="daily-area25">
+                                                <input type="checkbox" id="daily-area25" value="陕西"><span>陕西</span>
+                                            </label>
+                                            <label for="daily-area26">
+                                                <input type="checkbox" id="daily-area26" value="上海"><span>上海</span>
+                                            </label>
+                                            <label for="daily-area27">
+                                                <input type="checkbox" id="daily-area27" value="四川"><span>四川</span>
+                                            </label>
+                                            <br>
+                                            <span class="areazm">TXYZ</span>
+                                            <label for="daily-area28">
+                                                <input type="checkbox" id="daily-area28" value="天津"><span>天津</span>
+                                            </label>
+                                            <label for="daily-area29">
+                                                <input type="checkbox" id="daily-area29" value="西藏"><span>西藏</span>
+                                            </label>
+                                            <label for="daily-area30">
+                                                <input type="checkbox" id="daily-area30" value="新疆"><span>新疆</span>
+                                            </label>
+                                            <label for="daily-area31">
+                                                <input type="checkbox" id="daily-area31" value="云南"><span>云南</span>
+                                            </label>
+                                            <label for="daily-area32">
+                                                <input type="checkbox" id="daily-area32" value="浙江"><span>浙江</span>
+                                            </label>
+                                            <label for="daily-area33">
+                                                <input type="checkbox" id="daily-area33" value="香港"><span>香港</span>
+                                            </label>
+                                            <label for="daily-area34">
+                                                <input type="checkbox" id="daily-area34" value="台湾"><span>台湾</span>
+                                            </label>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="daily-areabybox">
+                                <div class="daily-areabyboxleft">不包邮配送地区</div>
+                                <div class="daily-areabyboxright">
+                                    <div class="daily-area daily-wxz">
+                                        未选择地区
+                                    </div>
+                                    <div class="daily-editor">
+                                        编辑
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="daily-areabybox">
+                                <div class="daily-areabyboxleft">不配送地区</div>
+                                <div class="daily-areabyboxright">
+                                    <div class="daily-area daily-wxz">
+                                        未选择地区
+
+
+                                    </div>
+                                    <div class="daily-editor">
+                                        编辑
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group chanpin1">
+                        <div class="select-time daily-areaby">
+                            <div class="daily-areabybox">
+                                <div class="daily-areabyboxleft">包邮配送地区</div>
+                                <div class="daily-areabyboxright">
+                                    <div class="daily-area">
+                                        北京、安徽、福建、甘肃、广东、广西、贵州、河南、
+                                        河北、湖南、黑龙江、湖北、
+                                        湖南、吉林、江苏、江西、辽宁、内蒙古、山东、陕西、贵州、
+                                        天津、四川、浙江、重庆
+                                    </div>
+                                    <div class="daily-editor">
+                                        <a href="">编辑</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="daily-areabybox daily-areabbybox">
+                                <div class="daily-areabyboxleft">不包邮配送地区</div>
+
+
+                                <div class="daily-area-container">
+                                    <div class="daily-areabyboxright1">
+                                        <div class="daily-area daily-area-padding">
+                                            <select name="" class="daily-bbyarea form-control">
+                                                <option value="">
+                                                    青海
+                                                </option>
+                                            </select>
+                                            <br>
+
+                                            <div class="daily-mztj">
+                                                <input type="text" class="form-control"><span
+                                                    class="daily-areatext">件内</span>
+                                                <input type="text" class="form-control"><span
+                                                    class="daily-areatext">元</span>
+
+                                                <span class="daily-areatext">每增加</span><input type="text"
+                                                                                              class="form-control">
+                                                <span class="daily-areatext">件，增加运费</span>
+                                                <input type="text" class="form-control"><span
+                                                    class="daily-areatext">元</span>
+                                            </div>
+                                            <label for="daily-zdtj1" class="daily-zdtj">
+                                                <input type="radio" id="daily-zdtj1">
+                                                <span class="daily-areatext">指定条件包邮</span>
+                                            </label>
+
+                                            <span class="daily-areatext">满</span>
+                                            <select name="" class="daily-jianu form-control">
+                                                <option value="">件/元</option>
+
+                                            </select>
+                                            <span class="daily-areatext">包邮</span>
+                                        </div>
+
+
+                                        <div class="daily-editor daily-adddelete">
+                                            <a href="" class="">删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="daily-areabyboxright1">
+                                        <div class="daily-area daily-area-padding">
+                                            <select name="" class="daily-bbyarea form-control">
+                                                <option value="">
+                                                    青海
+                                                </option>
+                                            </select>
+                                            <br>
+
+                                            <div class="daily-mztj">
+                                                <input type="text" class="form-control"><span
+                                                    class="daily-areatext">件内</span>
+                                                <input type="text" class="form-control"><span
+                                                    class="daily-areatext">元</span>
+
+                                                <span class="daily-areatext">每增加</span><input type="text"
+                                                                                              class="form-control">
+                                                <span class="daily-areatext">件，增加运费</span>
+                                                <input type="text" class="form-control"><span
+                                                    class="daily-areatext">元</span>
+                                            </div>
+                                            <label for="daily-zdtj2" class="daily-zdtj">
+                                                <input type="radio" id="daily-zdtj2">
+                                                <span class="daily-areatext">指定条件包邮</span>
+                                            </label>
+
+                                            <span class="daily-areatext">满</span>
+                                            <select name="" class="daily-jianu form-control">
+                                                <option value="">件/元</option>
+
+                                            </select>
+                                            <span class="daily-areatext">包邮</span>
+                                        </div>
+
+
+                                        <div class="daily-editor daily-adddelete">
+                                            <a href="" class="">删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="form-group daily-add daily-szadd">
+                                        <a href="javascript:void(0)">
+                                            <i class="iconfont iconadd"></i>
+                                            <span>设置指定区域运费</span>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="daily-areabybox">
+                            <div class="daily-areabyboxleft">不配送地区</div>
+                            <div class="daily-areabyboxright">
+                                <div class="daily-area">
+                                    <span>香港、澳门、台湾 </span>
+
+
+                                </div>
+                                <div class="daily-editor">
+                                    <a href="">编辑</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group chanpin2">
+                        <div class="select-time daily-areaby">
+                            <div class="daily-areabybox">
+                                <div class="daily-areabyboxleft">包邮配送地区</div>
+                                <div class="daily-areabyboxright">
+                                    <div class="daily-area">
+                                        北京、安徽、附件、甘肃、广东、广西、贵州、河南、
+                                        河北、湖南、黑龙江、湖北、
+                                        湖南、吉林、江苏、江西、辽宁、内蒙古、山东、陕西、贵州、
+                                        天津、四川、浙江、重庆
+                                    </div>
+                                    <div class="daily-editor">
+                                        <a href="">编辑</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="daily-areabybox">
+                                <div class="daily-areabyboxleft">不包邮配送地区</div>
+                                <div class="daily-areabyboxright">
+                                    <div class="daily-area daily-wxz">
+                                        未选择地区
+                                    </div>
+                                    <div class="daily-editor">
+                                        <a href=""></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="daily-areabybox">
+                                <div class="daily-areabyboxleft">不配送地区</div>
+                                <div class="daily-areabyboxright">
+                                    <div class="daily-area">
+                                        <span class="daily-releasexz">香港、台湾、澳门</span>
+
+
+                                    </div>
+                                    <div class="daily-editor">
+                                        <a href="">编辑</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <!--            <div class="form-group daily-ggkc daily-fwcnyf">-->
+            <!--                <label class="control-label">运费模板： </label>-->
+            <!--           -->
+
+            <!--            </div>-->
+
+
+            <div class="form-group daily-ggkc daily-fwcnyf">
+                <div class="form-group  daily-yfmb">
+                    <label class="control-label">承诺： </label>
+                    <div class="col-sm-10">
+
+                    <div class="form-group  daily-fwcnyf">
+                        <div class="daily-cn">
+                            <a href="javascript:void(0)">
+                                <img src="../../images/daily-sevenday.png" alt="">
+
+                                <span>七天无理由退款</span>
+                                <i></i>
+                            </a>
+                        </div>
+                        <div class="daily-cn">
+                            <a href="javascript:void(0)">
+                                <img src="../../images/daily-zhengp.png" alt="">
+                                <span>假一赔十</span>
+                                <i></i> </a>
+                        </div>
+                        <div class="daily-cn">
+                            <a href="javascript:void(0)">
+                                <img src="../../images/daily-hlbp.png" alt="">
+                                <span>坏了包赔</span>
+                                <i></i> </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!--            </div>-->
+        </div>
+
+    </section>
+    <!-- 内容 -->
+    <!-- 任务详情 -->
+    <section class="ap-daily-taskbar">
+        <div class="ap-daily-rightcont">
+            <h3 class="ap-daily-maskone">任务1：<span>直播预告制作与发布</span><i class="iconfont iconcomplete"></i></h3>
+            <div class="ap-mask-det">
+                <h3 class="ap-daily-maskscore">题目总分 <span>40分</span></h3>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题</p>
+                <h3 class="ap-daily-maskscore">任务资料 </h3>
+                <ul>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ppt.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-xls.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-jpg.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-word.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-video.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ysb.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-pdf.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+
+                </ul>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>请下载素材包，根据任务背景完成活动报名及相关信息设置，
+                    主要包括以下三个方面。（40分） </p>
+                <p>1）撰写直播脚本 2）粉丝互动 </p>
+                <p>2）粉丝互动 </p>
+            </div>
+            <h3 class="ap-daily-maskone">任务1：<span>直播预告制作与发布</span><i class="iconfont iconcomplete"></i></h3>
+            <div class="ap-mask-det">
+                <h3 class="ap-daily-maskscore">题目总分 <span>40分</span></h3>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题</p>
+                <h3 class="ap-daily-maskscore">任务资料 </h3>
+                <ul>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ppt.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-xls.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-jpg.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-word.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-video.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ysb.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-pdf.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+
+                </ul>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>请下载素材包，根据任务背景完成活动报名及相关信息设置，
+                    主要包括以下三个方面。（40分） </p>
+                <p>1）撰写直播脚本 2）粉丝互动 </p>
+                <p>2）粉丝互动 </p>
+            </div>
+            <h3 class="ap-daily-maskone">任务1：<span>直播预告制作与发布</span><i class="iconfont iconcomplete"></i></h3>
+            <div class="ap-mask-det">
+                <h3 class="ap-daily-maskscore">题目总分 <span>40分</span></h3>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题</p>
+                <h3 class="ap-daily-maskscore">任务资料 </h3>
+                <ul>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ppt.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-xls.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-jpg.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-word.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-video.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ysb.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-pdf.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+
+                </ul>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>请下载素材包，根据任务背景完成活动报名及相关信息设置，
+                    主要包括以下三个方面。（40分） </p>
+                <p>1）撰写直播脚本 2）粉丝互动 </p>
+                <p>2）粉丝互动 </p>
+            </div>
+
+            <h3 class="ap-daily-maskone">任务1：<span>直播预告制作与发布</span><i class="iconfont iconcomplete"></i></h3>
+            <div class="ap-mask-det">
+                <h3 class="ap-daily-maskscore">题目总分 <span>40分</span></h3>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题</p>
+                <h3 class="ap-daily-maskscore">任务资料 </h3>
+                <ul>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ppt.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-xls.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-jpg.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-word.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-video.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ysb.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-pdf.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+
+                </ul>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>请下载素材包，根据任务背景完成活动报名及相关信息设置，
+                    主要包括以下三个方面。（40分） </p>
+                <p>1）撰写直播脚本 2）粉丝互动 </p>
+                <p>2）粉丝互动 </p>
+            </div>
+        </div>
+    </section>
+    <!-- 任务详情 -->
+    <!-- 版权 -->
+    <section class="ap-daily-footer">
+        Copyright © 2021 博导股份. All rights reserved.
+    </section>
+    <!-- 版权 -->
+    <!-- 弹窗-->
+    <section>
+        <div class="daily-xzpiclist">
+            <div class="">
+                <div class="masklayer-form">
+
+                    <!--    平台选择表单-->
+                    <div class="platform-one">
+                        <form action="">
+
+                            <div class="pt">
+                                <h3>选择主题 <span>已选<span class="pt-syl">1</span>/8</span></h3>
+                                <ul>
+                                    <li>
+                                        <img src="../../images/dialy-pic01.png" alt="">
+                                        <i></i>
+                                    </li>
+                                    <li>
+                                        <img src="../../images/dialy-pic02.png" alt="">
+                                        <i></i></li>
+                                    <li>
+                                        <img src="../../images/dialy-pic03.png" alt="">
+                                        <i></i></li>
+                                    <li>
+                                        <img src="../../images/dialy-pic04.png" alt="">
+                                        <i></i></li>
+                                    <li>
+                                        <img src="../../images/dialy-pic05.png" alt="">
+                                        <i></i></li>
+                                    <li>
+                                        <img src="../../images/dialy-pic01.png" alt="">
+                                        <i></i></li>
+                                    <li>
+                                        <img src="../../images/dialy-pic03.png" alt="">
+                                        <i></i></li>
+                                    <li>
+                                        <img src="../../images/dialy-pic02.png" alt="">
+                                        <i></i></li>
+                                    <li>
+                                        <img src="../../images/dialy-pic02.png" alt="">
+                                        <i></i></li>
+                                    <li>
+                                        <img src="../../images/dialy-pic02.png" alt="">
+                                        <i></i></li>
+
+                                </ul>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 弹窗-->
+    <section>
+        <div class="form-group daily-ggsx">
+            <div class="daily-delete">
+                <select name="" id="" class="form-control">
+                    <option value="">请选择规格属性</option>
+                    <option value="" selected>重量</option>
+                    <option value="">尺寸</option>
+                    <option value="">属性</option>
+                    <option value="">套餐</option>
+
+                </select>
+                <span>删除</span>
+            </div>
+            <div class="daily-gzadd">
+                <select name="" id="" class="form-control">
+                    <option value="">请选择规格参数</option>
+                </select>
+                <a href="javascript:void(0)"> <i class="iconfont iconadd"></i>
+                    <span>添加</span></a>
+            </div>
+
+        </div>
+    </section>
+</div>
+<script src="../../script/jquery.min.js"></script>
+<script src="../../resources/bootstrap/js/bootstrap.js"></script>
+<script src="../../resources/layer/layer.js"></script>
+<script src="../../script/base.js"></script>
+<script src="../../script/daily.js"></script>
+</body>
+</html>
