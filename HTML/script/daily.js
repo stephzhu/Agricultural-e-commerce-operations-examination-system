@@ -1,10 +1,17 @@
 $(document).ready(function () {
 
+
+
     //规格添加
     var addGg = 0;
     $('.daily-addggbox').click(function () {
 
+        if (addGg >= 2) {
+            $(this).children('a').css('cursor', 'not-allowed');
+            addGg = 2;
 
+        } else {
+            $(this).children('a').css('cursor', 'pointer');
             $('.daily-ggkcbox .col-sm-10').append('  <div class="form-group daily-ggsx">\n' +
                 '            <div class="daily-delete">\n' +
                 '                <select name="" id="" class="form-control">\n' +
@@ -18,31 +25,66 @@ $(document).ready(function () {
                 '                <span>删除</span>\n' +
                 '            </div>\n' +
                 '            <div class="daily-gzadd">\n' +
-                '                <select name="" id="" class="form-control">\n' +
-                '                    <option value="">请选择规格参数</option>\n' +
-                '                </select>\n' +
+                '                <div class="daily-gzaddbox">\n' +
+                '                    <select name="" id="" class="form-control">\n' +
+                '                        <option value="">请选择规格参数</option>\n' +
+                '                    </select><i></i></div>\n' +
+                '                </div>\n' +
+                '\n' +
                 '                <a href="javascript:void(0)"> <i class="iconfont iconadd"></i>\n' +
                 '                    <span>添加</span></a>\n' +
                 '            </div>\n' +
+                '\n' +
                 '        </div>')
             addGg++;
-        if (addGg==2){
-            $(this).children('a').css('cursor', 'not-allowed');
-            // addGg=0;
+
+            $(this).children('a').css('cursor', 'pointer');
         }
+
+        return addGg;
 
     })
     //规格删除，append方法添加元素无法直接删除
     $(document).on("click", '.daily-ggsx .daily-delete span', function () {
-        $(this).parents('.daily-ggsx').remove();
-    });
-    $(document).on("click", '.daily-ggsx .daily-gzadd span', function () {
-        alert($(this).parent('a').html())
-        $(this).parent('a').insertBefore('<select name="" id="" class="form-control">\n' +
-            '                    <option value="">请选择规格参数</option>\n' +
-            '                </select>');
-    });
 
+        if (addGg <= 0) {
+            $(this).children('a').css('cursor', 'pointer');
+            alert(addGg)
+        } else {
+            $(this).children('a').css('cursor', 'pointer');
+            $(this).parents('.daily-ggsx').remove();
+
+        }
+
+    });
+    var arr1 = 0;
+    var spanLen = $(this).parent('.daily-gzadd div').children('select').length;
+    $(document).on("click", '.daily-ggsx a span', function () {
+
+        arr1++;
+        if (arr1 > 3) {
+            $(this).parent('a').siblings('.daily-gzadd').append('<div class="daily-gzaddbox">' +
+                '<select name="" id="" class="form-control selected">n' +
+                '<option value="">5斤装核桃酸奶饮料</option>n' +
+                '</select>' +
+                '<i></i></div>');
+            $(this).parent('a').empty()
+            arr1 = 4;
+        } else {
+            $(this).parent('a').siblings('.daily-gzadd').append('<div class="daily-gzaddbox">' +
+                '<select name="" id="" class="form-control selected">n' +
+                '<option value="">5斤装核桃酸奶饮料</option>n' +
+                '</select>' +
+                '<i></i></div>');
+
+        }
+        return arr;
+    });
+    $('.daily-gzadd select').hover(function () {
+
+    }, function () {
+
+    })
 
     //运费模板切换
     var li = $('#tabs');
@@ -321,61 +363,61 @@ $(document).ready(function () {
     // })
     //
     //
-    // // //运费模板
-    // let arr = [];
-    // $(".daily-bypsdq .daily-bypsdq-city input:checkbox").click(function () {
-    //     arr = []
-    //     var checkbox = $(".daily-bypsdq .daily-bypsdq-city input:checkbox:checked")
-    //         .each(function (index) {
-    //             arr[index] = $(this).val();
-    //         })
-    //     return arr;
-    // })
-    //
-    // var court = 1;
-    // $('.daily-byeditor').click(function () {
-    //
-    //     if (court % 2 == 0) {
-    //         // 第二次点击，直接点击保存，未选择城市
-    //         if (arr.length == 0) {
-    //             alert('您未选择城市，请先选择')
-    //             // alert(court)
-    //         } else if (arr.length == 0 && (court > 1)) {
-    //             $(this).html('编辑')
-    //             $(this).siblings('.daily-xzdt').slideUp();
-    //             $(this).siblings('.daily-wxz').html('未选择地区');
-    //         } else {
-    //             // alert(court)
-    //             $(this).html('编辑')
-    //             $(this).siblings('.daily-xzdt').slideUp();
-    //             $(this).siblings('.daily-wxz').html(arr.join('、'));
-    //             court++;
-    //             // alert('准备第三次点击')
-    //         }
-    //     } else {
-    //
-    //         if (arr.length == 0 && (court > 1)) {
-    //             $(this).html('编辑')
-    //             $(this).siblings('.daily-xzdt').slideUp();
-    //             $(this).siblings('.daily-wxz').html('未选择地区');
-    //             // }else if(arr.length >= 0 ){
-    //
-    //         } else if (arr.length != 0 && court > 1) {
-    //             // 选中再次点击编辑
-    //             $(this).html('保存')
-    //             $(this).siblings('.daily-xzdt').slideDown();
-    //             // alert('第次点击' + court);
-    //             court++;
-    //         } else {
-    //             // 第一次点击
-    //             $(this).html('保存')
-    //             $(this).siblings('.daily-xzdt').slideDown();
-    //             // alert('第一次点击' + court);
-    //             court++;
-    //         }
-    //
-    //     }
-    // })
+    // //运费模板
+    let arr = [];
+    $(".daily-bypsdq .daily-bypsdq-city input:checkbox").click(function () {
+        arr = []
+        var checkbox = $(".daily-bypsdq .daily-bypsdq-city input:checkbox:checked")
+            .each(function (index) {
+                arr[index] = $(this).val();
+            })
+        return arr;
+    })
+
+    var court = 1;
+    $('.daily-byeditor').click(function () {
+
+        if (court % 2 == 0) {
+            // 第二次点击，直接点击保存，未选择城市
+            if (arr.length == 0) {
+                alert('您未选择城市，请先选择')
+                // alert(court)
+            } else if (arr.length == 0 && (court > 1)) {
+                $(this).html('编辑')
+                $(this).siblings('.daily-xzdt').slideUp();
+                $(this).siblings('.daily-wxz').html('未选择地区');
+            } else {
+                // alert(court)
+                $(this).html('编辑')
+                $(this).siblings('.daily-xzdt').slideUp();
+                $(this).siblings('.daily-wxz').html(arr.join('、'));
+                court++;
+                // alert('准备第三次点击')
+            }
+        } else {
+
+            if (arr.length == 0 && (court > 1)) {
+                $(this).html('编辑')
+                $(this).siblings('.daily-xzdt').slideUp();
+                $(this).siblings('.daily-wxz').html('未选择地区');
+                // }else if(arr.length >= 0 ){
+
+            } else if (arr.length != 0 && court > 1) {
+                // 选中再次点击编辑
+                $(this).html('保存')
+                $(this).siblings('.daily-xzdt').slideDown();
+                // alert('第次点击' + court);
+                court++;
+            } else {
+                // 第一次点击
+                $(this).html('保存')
+                $(this).siblings('.daily-xzdt').slideDown();
+                // alert('第一次点击' + court);
+                court++;
+            }
+
+        }
+    })
 
 
 })

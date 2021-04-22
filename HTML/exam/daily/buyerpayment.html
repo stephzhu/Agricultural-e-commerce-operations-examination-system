@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+    <link href="../../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/daily.css">
+</head>
+<body class="ap-daily-bg">
+<div class="wrapper">
+    <!-- 头部 -->
+    <header class="ap-daily-header">
+        <!--    返回实训任务-->
+        <div class="ap-daily-return">
+            <i class="iconfont iconreturn"></i>
+            <a href="../../index.html">返回任务首页</a>
+        </div>
+        <!--    等级考试logo-->
+        <div class="ap-daily-logo">
+            <a href="#">
+                农产品电商运营职业技能等级证书考试系统
+            </a>
+        </div>
+        <!--    倒计时-->
+        <div class="ap-daily-countdown">
+            <span>倒计时:</span>&nbsp;<span id="ap-daily-time" class="timer"><span id="_h"></span><span
+                id="_m"></span><span
+                id="_s"></span></span>
+        </div>
+        <!--   任务详情 -->
+        <div class="ap-daily-maskdet">
+            <a href="#"> <i class="iconfont iconprompt"></i>
+                <a href="#"><span>任务详情</span></a>
+                <span class="ap-daily-toggle"><i class="iconfont icondevelop"></i></span>
+        </div>
+        <!--    账号信息及其退出-->
+        <div class="ap-daily-admin">
+            <a href="#"> <img src="../../images/ap-daily-admin.png" alt=""></a>
+            <span>admin</span>
+            <a href="#"> <img class="" src="../../images/ap-daily-tuic.png" alt=""></a>
+        </div>
+    </header>
+    <!-- 头部 -->
+    <section class="ap-daily-sider">
+        <div class="ap-daily-navleft">
+            <!--        日常运营-->
+            <div class="ap-daily-rcyy">
+                <img src="../../images/ap-daily-rcyy.png" alt="">
+
+            </div>
+            <p>电商日常运营</p>
+            <div class="ap-daily-navleftlist">
+                <ul>
+                    <li><a class="ap-daily-navleftlistone" href="javasctipt:void(0)"><i class="iconfont icontrim"></i>店铺装修</a>
+                    </li>
+                    <li><a href="basicinfo.html">基础信息</a></li>
+                    <li><a href="goodsclassifiy.html">商品分类</a></li>
+                </ul>
+                <ul>
+                    <li><a class="ap-daily-navleftlisttwo" href="javasctipt:void(0)"><i class="iconfont icongoods"></i>商品管理</a>
+                    </li>
+                    <li><a href="goodsfbrelease.html">商品发布</a></li>
+                </ul>
+                <ul>
+                    <li><a class="ap-daily-navleftlistthree" href="javasctipt:void(0)"><i
+                            class="iconfont iconcollate"></i>交易管理</a>
+                    </li>
+                    <li><a href="checkbilling.html">核对账单设置</a></li>
+                    <li class="active"><a href="orderlist.html">订单管理</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 左边菜单栏 -->
+    <!-- 头部 -->
+    <!-- 内容 -->
+    <section class="ap-daily-wrapper">
+        <div class="ap-daily-theme">
+            <p class="daily-orderdetman"><a href="">订单管理&nbsp;>&nbsp;</a><span>订单详情</span></p>
+        </div>
+        <div class="ap-daily-checkbilling-form">
+            <div class="daily-orderdetcont">
+                <!--买家下单-->
+                <div class="daily-orderdet-place">
+                    <div class="daily-orderdet-placebox">
+                        <span class="daily-orderdet-num">1</span><a href="#">买家下单</a><span class="daily-orderdet-arrow"> >  </span>
+                    </div>
+                    <div class="daily-orderdet-placebox  detactive">
+                        <span class="daily-orderdet-num">2</span><a href="#">买家付款</a><span class="daily-orderdet-arrow"> >  </span>
+                    </div>
+                    <div class="daily-orderdet-placebox">
+                        <span class="daily-orderdet-num">3</span><a href="#">发货</a><span
+                            class="daily-orderdet-arrow"> >  </span>
+                    </div>
+                    <div class="daily-orderdet-placebox">
+                        <span class="daily-orderdet-num">4</span><a href="#">买家确认收货</a><span
+                            class="daily-orderdet-arrow"> >  </span>
+                    </div>
+                    <div class="daily-orderdet-placebox">
+                        <span class="daily-orderdet-num">5</span><a href="#">评价</a></span>
+                    </div>
+                </div>
+                <!--当前订单详情-->
+                <div class="daily-orderdet-mjfh">
+                    <p>当前订单状态：商品已拍下，等待买家付款</p>
+                    <ul>
+                        <li>商品被恶意拍下了，<a href="#">该怎么办 ？</a></li>
+                        <li>过季信用卡交易<a href="#">常见问题</a></li>
+                    </ul>
+                    <div>
+                        <a href="javascript:void(0)">修改价格</a>
+                        <a href="javascript:void(0)">关闭交易</a>
+                    </div>
+                </div>
+                <!--订单及其退货信息-->
+                <div class="daily-orderdet-info daily-orderdet-mjfkinfo">
+                    <div>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                                      data-toggle="tab">订单信息</a></li>
+
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                                                       data-toggle="tab">收货物流信息</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active daily-orderdet-tabpane1" id="home">
+                                <div><h3>买家留言：<span>淘宝怎么看买家留言信息？下面我给大家分享一下淘宝怎么看买家留言信息，希望可以帮到大家。</span></h3>
+                                </div>
+                                <div class="daily-orderdet-mjinfo daily-orderdet-mjinfo1">
+                                    <h3>买家信息</h3>
+                                    <div>
+                                        <div class="daily-orderdet-area daily-orderdet-area1">
+                                            <span>所在地区：<span class="daily-orderdet-lxinfo">陕西西安</span></span>
+                                        </div>
+                                        <div class="daily-orderdet-area daily-orderdet-area2">
+                                            <span>联系电话：<span class="daily-orderdet-lxinfo">182 2919 0711</span></span>
+                                        </div>
+                                        <div class="daily-orderdet-area daily-orderdet-area3">
+                                            <span>邮编：<span class="daily-orderdet-lxinfo">733303</span></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="daily-orderdet-mjinfo daily-orderdet-ddinfo">
+                                    <h3>订单信息</h3>
+                                    <div>
+                                        <div class="daily-orderdet-area daily-orderdet-area1">
+                                            <span>订单编号：<span
+                                                    class="daily-orderdet-lxinfo">25974632120014502</span></span>
+                                        </div>
+                                        <div class="daily-orderdet-area daily-orderdet-area2">
+                                            <span>创建时间：<span
+                                                    class="daily-orderdet-lxinfo">2021-04-16  11:20:11</span></span>
+                                        </div>
+                                        <div class="daily-orderdet-area daily-orderdet-area3">
+                                            <span>付款时间：<span
+                                                    class="daily-orderdet-lxinfo">2021-04-17  22:20:11</span></span>
+                                        </div>
+                                    </div>
+                                    <table>
+
+                                        <thead>
+                                        <tr>
+                                            <th width="292">宝贝</th>
+                                            <th width="185">属性</th>
+                                            <th width="99">状态</th>
+                                            <th width="103">服务</th>
+                                            <th width="102">单价</th>
+                                            <th width="50">数量</th>
+                                            <th width="84">优惠</th>
+                                            <th width="120">商品总价</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="daily-orderdet-table">
+                                                    <img src="../../images/daily-orderdet-img.png" alt="">
+
+                                                    <div>
+                                                        <p>沙土铁棍山药 怀山药淮山药新鲜蔬菜轻食健康</p>
+                                                        <span>发货时间：3天内发货</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="daily-orderdet-sx">
+                                                <p>
+                                                    颜色分类：自选（备注0
+                                                    跟客服留言无效！
+                                                </p>
+                                                <p>尺码：5双装</p>
+
+
+                                            </td>
+                                            <td class="daily-orderdet-zt">退款中</td>
+                                            <td class="daily-orderdet-fw"></td>
+                                            <td class="daily-orderdet-dj">￥158.90</td>
+                                            <td class="daily-orderdet-bbnum">10</td>
+                                            <td class="daily-orderdet-sale">￥0.00</td>
+                                            <td class="daily-orderdet-total">
+                                                <p>￥5890.90</p>
+                                                <span>( 快递:￥0.00 )</span>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="daily-orderdet-ssnum">
+                                        <p>实收款：<span>5890.00</span>元</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div role="tabpanel" class="tab-pane daily-orderdet-tabpane1" id="messages">
+                                <div class="daily-orderdet-mjinfo daily-orderdet-ddinfo daily-orderdet-ddwlinfo">
+                                    <h3>物流信息</h3>
+                                    <p><span>收货地址：</span>王晓华 &nbsp; 136****4598 &nbsp; 陕西省 西安市雁塔区唐延南路8号</p>
+                                    <p><span>运送方式：</span>快递</p>
+                                    <p><span>物流公司：</span>圆通快递</p>
+                                    <p><span>运单号：</span>YT5482513026021</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 内容 -->
+    <!-- 任务详情 -->
+    <section class="ap-daily-taskbar">
+        <div class="ap-daily-rightcont">
+            <h3 class="ap-daily-maskone">任务1：<span>直播预告制作与发布</span><i class="iconfont iconcomplete"></i>
+            </h3>
+            <div class="ap-mask-det">
+                <h3 class="ap-daily-maskscore">题目总分 <span>40分</span></h3>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题</p>
+                <h3 class="ap-daily-maskscore">任务资料 </h3>
+                <ul>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ppt.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-xls.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-jpg.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-word.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-video.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ysb.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-pdf.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+
+                </ul>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>请下载素材包，根据任务背景完成活动报名及相关信息设置，
+                    主要包括以下三个方面。（40分） </p>
+                <p>1）撰写直播脚本 2）粉丝互动 </p>
+                <p>2）粉丝互动 </p>
+            </div>
+            <h3 class="ap-daily-maskone">任务1：<span>直播预告制作与发布</span><i class="iconfont iconcomplete"></i>
+            </h3>
+            <div class="ap-mask-det">
+                <h3 class="ap-daily-maskscore">题目总分 <span>40分</span></h3>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题</p>
+                <h3 class="ap-daily-maskscore">任务资料 </h3>
+                <ul>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ppt.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-xls.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-jpg.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-word.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-video.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ysb.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-pdf.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+
+                </ul>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>请下载素材包，根据任务背景完成活动报名及相关信息设置，
+                    主要包括以下三个方面。（40分） </p>
+                <p>1）撰写直播脚本 2）粉丝互动 </p>
+                <p>2）粉丝互动 </p>
+            </div>
+            <h3 class="ap-daily-maskone">任务1：<span>直播预告制作与发布</span><i class="iconfont iconcomplete"></i>
+            </h3>
+            <div class="ap-mask-det">
+                <h3 class="ap-daily-maskscore">题目总分 <span>40分</span></h3>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题</p>
+                <h3 class="ap-daily-maskscore">任务资料 </h3>
+                <ul>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ppt.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-xls.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-jpg.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-word.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-video.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ysb.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-pdf.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+
+                </ul>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>请下载素材包，根据任务背景完成活动报名及相关信息设置，
+                    主要包括以下三个方面。（40分） </p>
+                <p>1）撰写直播脚本 2）粉丝互动 </p>
+                <p>2）粉丝互动 </p>
+            </div>
+
+            <h3 class="ap-daily-maskone">任务1：<span>直播预告制作与发布</span><i class="iconfont iconcomplete"></i>
+            </h3>
+            <div class="ap-mask-det">
+                <h3 class="ap-daily-maskscore">题目总分 <span>40分</span></h3>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题农业问题</p>
+                <h3 class="ap-daily-maskscore">任务资料 </h3>
+                <ul>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ppt.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-xls.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-jpg.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-word.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-video.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-ysb.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+                    <li><a href="">
+                        <img src="../../images/ap-daily-pdf.png" alt="">
+                        <span>看盒马如何改变农产品流通模式.ppt</span>
+                        <i class="iconfont icondownload"></i>
+                    </a></li>
+
+                </ul>
+                <h3 class="ap-daily-maskscore">任务背景 </h3>
+                <p>请下载素材包，根据任务背景完成活动报名及相关信息设置，
+                    主要包括以下三个方面。（40分） </p>
+                <p>1）撰写直播脚本 2）粉丝互动 </p>
+                <p>2）粉丝互动 </p>
+            </div>
+        </div>
+    </section>
+    <!-- 任务详情 -->
+    <!-- 版权 -->
+    <section class="ap-daily-footer">
+        Copyright © 2021 博导股份. All rights reserved.
+    </section>
+    <!-- 版权 -->
+</div>
+<script src="../../script/jquery.min.js"></script>
+<script src="../../resources/bootstrap/js/bootstrap.js"></script>
+<script src="../../script/base.js"></script>
+<script src="../../script/daily.js"></script>
+<script>
+    var mjfkLi = $('.daily-orderdet-mjfkinfo .nav-tabs li');
+    mjfkLi.click(function (e) {
+        var liIndex=$(this).index();
+        if (liIndex == 1){
+            $(this).css('border-right', '1px solid #dcdfe6')
+        }else{
+            mjfkLi.eq(1).css('border-right', '0')
+            mjfkLi.eq(1).css('border-left', '0')
+        }
+    })
+</script>
+</body>
+</html>

@@ -1023,3 +1023,5 @@ input[type=radio]:disabled {
 .ap-daily-toggle {
   cursor: pointer;
 }
+
+/* 自定义layer */.layer-dialog{	border-radius: 4px !important;	overflow: hidden;}.layer-dialog .layui-layer-title{	border-bottom: 1px solid #dcdfe6;	line-height: 60px;	height: 60px;	background-color: #FFFFFF;	color: #303133;	font-size: 20px;}.layer-dialog .layui-layer-setwin{	top: 22px;	right: 20px;}.layer-dialog-wrapper{	display: none;}

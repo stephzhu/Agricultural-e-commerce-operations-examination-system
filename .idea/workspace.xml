@@ -34,13 +34,13 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\02设计\HTML\script" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\02设计\HTML\css" />
       <recent name="C:\Users\Administrator\Desktop\02设计\HTML\script" />
       <recent name="C:\Users\Administrator\Desktop\02设计\HTML\exam\daily" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\02设计\HTML\script" />
     </key>
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
@@ -70,6 +70,7 @@
       <workItem from="1618806110132" duration="15942000" />
       <workItem from="1618879857075" duration="35285000" />
       <workItem from="1618966041706" duration="35293000" />
+      <workItem from="1619053466833" duration="38329000" />
     </task>
     <servers />
   </component>
