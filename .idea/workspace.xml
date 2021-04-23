@@ -31,7 +31,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/HTML/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -44,8 +44,9 @@
     </key>
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
-    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <configuration useDefault="false">C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
+    <option name="runUnderTerminal" value="true" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,6 +72,11 @@
       <workItem from="1618879857075" duration="35285000" />
       <workItem from="1618966041706" duration="35293000" />
       <workItem from="1619053466833" duration="38329000" />
+      <workItem from="1619093278357" duration="115000" />
+      <workItem from="1619139378716" duration="537000" />
+      <workItem from="1619140743534" duration="3557000" />
+      <workItem from="1619144449473" duration="2481000" />
+      <workItem from="1619155333391" duration="20125000" />
     </task>
     <servers />
   </component>
@@ -78,17 +84,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="208" key="SettingsEditor" timestamp="1619003050479">
+    <state x="616" y="193" key="#Notifications" timestamp="1619141054404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="446" y="208" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1619003050479" />
-    <state x="621" y="247" key="run.anything.popup" timestamp="1618975771026">
+    <state x="616" y="193" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1619141054404" />
+    <state x="446" y="208" key="SettingsEditor" timestamp="1619144463856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="621" y="247" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618975771026" />
-    <state x="628" y="254" width="672" height="678" key="search.everywhere.popup" timestamp="1619002790960">
+    <state x="446" y="208" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1619144463856" />
+    <state x="621" y="247" key="run.anything.popup" timestamp="1619163772269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="628" y="254" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1619002790960" />
+    <state x="621" y="247" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1619163772269" />
+    <state x="628" y="254" width="672" height="678" key="search.everywhere.popup" timestamp="1619143609345">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="628" y="254" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1619143609345" />
   </component>
 </project>

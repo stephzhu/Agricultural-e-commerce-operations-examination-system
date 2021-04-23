@@ -235,7 +235,9 @@
                         </div>
                       </div>
                       <div class="edit-message">
-                         <textarea name="" id=""></textarea>
+                        <div contenteditable="true" id="chat-frame" class="chat-frame">
+                           
+                        </div>
                          <button class="send-btn">发送</button>
                       </div>
                   </div>
@@ -480,6 +482,7 @@
   })
   $(".handle p").click(function(){
     $(this).addClass("active").siblings().removeClass("active")
+    $("#chat-frame").html($(this).text());
   })
 </script>
 

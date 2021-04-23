@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
     <link href="../../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/daily.css">
+    <link rel="stylesheet" type="text/css" href="../../css/layer.css"/>
 </head>
 <body class="ap-daily-bg">
 <div class="wrapper">
@@ -111,7 +112,7 @@
                     </p>
                     <div>
                         <button>发货</button>
-                        <a href="javascript:void(0)">修改收货地址</a>
+                        <a class="daily-orderdet-delivermodify" href="javascript:void(0)">修改收货地址</a>
                     </div>
                 </div>
                 <!--订单及其退货信息-->
@@ -492,27 +493,120 @@
         Copyright © 2021 博导股份. All rights reserved.
     </section>
     <!-- 版权 -->
+    <!--    弹窗-->
+    <section>
+
+        <div class="modifyaddress">
+            <div class="masklayer-form">
+                <!--    平台选择表单-->
+                <div class="platform-one">
+                    <table>
+                        <thead>
+                            <tr>
+                                   <th width="85">原地址</th>
+                                   <th width="692">陕西省  西安市  高新区唐延南路8号西安软件园超市菜鸟站，710000 ，159 2654 2659</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>新地址</td>
+                                <td>
+                                    <div class="form-group">
+                                        <label for="" >
+                                            <span>所在区域:</span>
+                                            <select class="form-control" name="" id="">
+                                                <option value="">请选择省份</option>
+                                            </select>
+                                            <select class="form-control" name="" id="">
+                                                <option value="">请选择市</option>
+                                            </select>
+                                            <select class="form-control" name="" id="">
+                                                <option value="">请选择区</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">
+                                            <span>邮政编码:</span>
+                                            <select class="form-control" name="" id="">
+                                                <option value="">请选择省份</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">
+                                            <span>街道地址:</span>
+                                            <textarea class="form-control" sname="" id="" placeholder="请输入所在街道及详细地址"></textarea>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">
+                                            <span>收货人:</span>
+                                            <input class="form-control"  type="text" placeholder="请输入收货人姓名">
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <label for="">
+                                            <span>电话号码:</span>
+                                            <input class="form-control"  type="text" placeholder="请输入电话号码（选填）">
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="">
+                                            <span>手机号:</span>
+                                            <input class="form-control"  type="text" placeholder="请输入手机号码">
+                                        </label>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--    弹窗-->
 </div>
 <script src="../../script/jquery.min.js"></script>
 <script src="../../resources/bootstrap/js/bootstrap.js"></script>
 <script src="../../script/base.js"></script>
 <script src="../../script/daily.js"></script>
+<script src="../../resources/layer/layer.js"></script>
 <script>
+    // 添加修改地址弹窗
+    $(".daily-orderdet-delivermodify").click(function () {
+
+        layer.open({
+            type: 1,
+            title: '修改收货地址',
+            area: ["844px", "668px"],
+            content: $(".modifyaddress"),
+            skin: "layer-modifyaddress-style",
+            btn: ["取消", "确认"]
+        })
+    });
+
 
     $('.daily-orderdet-info .nav-tabs li').click(function (e) {
-        var tabIndex=$(this).index()
+        var tabIndex = $(this).index()
         // alert(tabIndex)
-        if (tabIndex ==2){
+        if (tabIndex == 2) {
             $('.daily-orderdet-info .nav-tabs li').eq(0)
-                .children('a').css('border-right','0')
-        }else if(tabIndex ==1){
+                .children('a').css('border-right', '0')
+        } else if (tabIndex == 1) {
             $('.daily-orderdet-info .nav-tabs li').eq(0)
-                .children('a').css('border-right','1px solid #dcdfe6')
-        }else{
+                .children('a').css('border-right', '1px solid #dcdfe6')
+        } else {
             $('.daily-orderdet-info .nav-tabs li').eq(0)
-                .children('a').css('border-right','0')
+                .children('a').css('border-right', '0')
         }
     })
+
+
 </script>
 </body>
 </html>

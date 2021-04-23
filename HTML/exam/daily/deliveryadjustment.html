@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>发货</title>
     <link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
     <link href="../../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/daily.css">
-    <link rel="stylesheet" href="../../css/layer.css">
-
 </head>
+
 <body class="ap-daily-bg">
 <div class="wrapper">
     <!-- 头部 -->
@@ -27,8 +27,7 @@
         <!--    倒计时-->
         <div class="ap-daily-countdown">
             <span>倒计时:</span>&nbsp;<span id="ap-daily-time" class="timer"><span id="_h"></span><span
-                id="_m"></span><span
-                id="_s"></span></span>
+                id="_m"></span><span id="_s"></span></span>
         </div>
         <!--   任务详情 -->
         <div class="ap-daily-maskdet">
@@ -54,13 +53,15 @@
             <p>电商日常运营</p>
             <div class="ap-daily-navleftlist">
                 <ul>
-                    <li><a class="ap-daily-navleftlistone" href="javasctipt:void(0)"><i class="iconfont icontrim"></i>店铺装修</a>
+                    <li><a class="ap-daily-navleftlistone" href="javasctipt:void(0)"><i
+                            class="iconfont icontrim"></i>店铺装修</a>
                     </li>
                     <li><a href="basicinfo.html">基础信息</a></li>
                     <li><a href="goodsclassifiy.html">商品分类</a></li>
                 </ul>
                 <ul>
-                    <li><a class="ap-daily-navleftlisttwo" href="javasctipt:void(0)"><i class="iconfont icongoods"></i>商品管理</a>
+                    <li><a class="ap-daily-navleftlisttwo" href="javasctipt:void(0)"><i
+                            class="iconfont icongoods"></i>商品管理</a>
                     </li>
                     <li><a href="goodsfbrelease.html">商品发布</a></li>
                 </ul>
@@ -79,144 +80,166 @@
     <!-- 内容 -->
     <section class="ap-daily-wrapper">
         <div class="ap-daily-theme">
-            <p class="daily-orderdetman"><a href="">订单管理&nbsp;>&nbsp;</a><span>物流管理</span></p>
+            <p class="daily-orderdetman"><a href="">订单管理&nbsp;>&nbsp;</a><span>发货</span></p>
 
 
         </div>
-        <div class="ap-daily-checkbilling-form">
-            <div class="daily-logisticsinfo">
-                <div class="daily-logisticsdet">
-                    <div class="daily-logisticsbh">
-                        <div>
-                            <p>物流编号</p>
-                            <p>175621542021041523</p>
-                        </div>
-                        <div>
-                            <p>运单号码</p>
-                            <p>256312021041925459</p>
-                        </div>
-                        <div>
-                            <p>发货方式</p>
-                            <p class="daily-shengs">自己联系</p>
-                        </div>
-                        <div>
-                            <p>运物流公司</p>
-                            <p class="daily-shengs">邮政快递包裹</p>
-                        </div>
+        <div class="ap-daily-deliveradjust">
 
+            <!--第一步-->
+            <div class="daily-deliveradjust-one ">
+                <p class="daily-deliveradjust-tit">第一步：确认收货信息</p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th colspan="2">订单号: 782547139409306351</th>
 
-                    </div>
-                    <div class="daily-logisticsbh">
-                        <div>
-                            <p>订单编号</p>
-                            <p>175621542021041523</p>
-                        </div>
-                        <div>
-                            <p>创建时间</p>
-                            <p>2021-03-19 15:36:00</p>
-                        </div>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="flex">
+                        <td class="daily-deliveradjust-spname">
+                            <div>
+                                <p>
+                                    恩施新鲜土豆5斤小土豆农产品黄心马铃薯大蔬菜洋芋10香生鲜团建.
+                                    恩施新鲜土豆5斤小土豆农产品黄心马铃薯大蔬菜洋芋10香生鲜团建..
+                                </p>
+                                <p class="daily-deliveradjust-size">重量：5斤装 规格：80mm以上</p>
+                                <p>￥1006.00</p>
+                            </div>
+                        </td>
+                        <td class="daily-deliveradjust-leavemes">
+                            <p><span>买家选择：</span><span>快递</span> </p>
+                            <p class="flex"><span>买家留言：</span>
+                                <span>我们的社会正处于大数据时代。在大数据下，我们的行迹是否真的无所遁形？
+                                            我们的喜好是否真的已经被量身定制？</span>
+                            </p>
+                            <p>
+                                <label for="daily-deliveradjust-leavemestext"><span>卖家留言：</span>
 
-                    </div>
-                </div>
-                <div class="daily-logisticsdynamic">
-                    <div>
-                        <h3>物流动态</h3>
-                        <ul class="layui-timeline">
-                            <li class="layui-timeline-item">
-                                <i class="layui-icon layui-timeline-axis"></i>
-                                <div class="layui-timeline-content layui-text">
-                                    <span class="layui-timeline-title">2021-04-19  15:29:30</span>
-                                    <p class="wlactive"> [武汉市]已到达 管理学院 教室门口</p>
-                                </div>
-                            </li>
-                            <li class="layui-timeline-item">
-                                <i class="layui-icon layui-timeline-axis"></i>
-                                <div class="layui-timeline-content layui-text">
-                                    <span class="layui-timeline-title">2021-04-18  15:29:30</span>
-                                    <p> [武汉市]顺丰快递 武昌区小区东门 已开始配送
-                                    </p>
-                                    <p>配送员：张晓华 13626893036
-                                    </p>
+                                <textarea class="form-control" id="daily-deliveradjust-leavemestext"
+                                          placeholder="请输入所在街道及详细地址"></textarea>
+                                </textarea></label>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="daily-deliveradjust-modifyadd">
+                            <span>买家收货地址：陕西省 西安市 高新区唐延南路8号西安软件园超市菜鸟站，710000 ，159 2654 2659</span>
+                            <a href="javascript:;">修改地址信息</a>
+                        </td>
 
-                                </div>
-                            </li>
-                            <li class="layui-timeline-item">
-                                <i class="layui-icon layui-timeline-axis"></i>
-                                <div class="layui-timeline-content layui-text">
-                                    <span class="layui-timeline-title">2021-04-17  15:29:30</span>
-                                    <p> [武汉市]快件已从 班德尔分力安中心 发出
-
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="layui-timeline-item">
-                                <i class="layui-icon layui-timeline-axis"></i>
-                                <div class="layui-timeline-content layui-text">
-                                    <span class="layui-timeline-title">2021-04-16  15:29:30</span>
-                                    <p>
-                                        [武汉市]商业仓库1仓 备货中
-
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="layui-timeline-item">
-                                <i class="layui-icon layui-timeline-axis"></i>
-                                <div class="layui-timeline-content layui-text">
-                                    <span class="layui-timeline-title">2021-04-15  15:29:30</span>
-                                    <p>
-                                        该订单卖家已确认
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>宝贝信息</h3>
-                        <table>
-                            <thead>
-                            <tr>
-                                <th width="384">宝贝</th>
-                                <th width="122">单价</th>
-                                <th width="59">数量</th>
-                                <th width="125">商品总价</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-
-                                <td>
-                                    <div class="daily-logistics-table">
-                                        <img src="../../images/daily-orderdet-img.png" alt="">
-
-                                        <div>
-                                            <p>沙土铁棍山药 怀山药淮山药新鲜蔬菜轻食健康</p>
-                                            <span>发货时间：3天内发货</span>
-                                        </div>
-                                    </div>
-
-                                </td>
-                                <td class="daily-logistics-tableprice">￥158.90</td>
-                                <td class="daily-logistics-tablenum">10</td>
-                                <td class="daily-orderdet-total">
-                                    <p>￥90.90</p>
-                                    <span>( 快递:￥0.00 )</span>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="daily-logisticssth">
-                        <h3>收/退货信息</h3>
-                        <p><span>收货信息：</span>陕西省  西安市  高新区唐延南路8
-                            号西安软件园超市菜鸟站，710000 ，李浩然，159 2654 2659</p>
-                        <p><span>发货信息：</span>广东省东莞市  茶山镇南社
-                            村迪胜工业园仓库，710000 ，杭女士，159 2654 2659</p>
-                        <p><span>退货信息：</span>广东省东莞市  茶山镇南社村迪胜工业园仓
-                            库，710000 ，杭女士，159 2654 2659</p>
-                    </div>
-                </div>
-
+                    </tr>
+                    </tbody>
+                </table>
             </div>
+            <!--第二步-->
+            <div class="daily-deliveradjust-two">
+                <p class="daily-deliveradjust-tit">第二步：选择物流服务</p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th width="202">公司名称</th>
+                        <th width="228">最高限价（首重/续重）</th>
+                        <th width="240">丢失（损毁）赔付</th>
+                        <th width="240">破损赔付</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>圆通快递</td>
+                        <td>
+                            <p>小于1.0公斤：12.0元
+                            </p>
+                            <p>每加1.0公斤：10.0元</p>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a class="daily-deliveradjust-chose" href="#">选择</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>圆通快递</td>
+                        <td>
+                            <p>小于1.0公斤：12.0元
+                            </p>
+                            <p>每加1.0公斤：10.0元</p>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr class="daily-deliveradjust-online">
+                        <td colspan="5">
+                            <div>
+                                <span>下单方式： 在线下单</span>
+                                <span class="daily-deliveradjust-ydbh">运单编号： <input class="form-control"
+                                                                                    type="text"
+                                                                                    placeholder="可以在物流公司取货后填写"></span>
+                                <span><a href="">确认</a></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>圆通快递</td>
+                        <td>
+                            <p>小于1.0公斤：12.0元
+                            </p>
+                            <p>每加1.0公斤：10.0元</p>
+                        </td>
+                        <td>
+                            <div>
+                                        <span> 无保价<=1000元保价[1%] 
+                                                <i class="iconfont iconprompt" data-toggle="tooltip"
+                                                   data-placement="top" title="">
+                                                    <div class="daily-deliveradjust-tips">
+                                                        <p class="daily-deliveradjust-ywb">无保：</p>
+                                                        <p>  1、按实际价值进行赔偿，最高不超过1000元。</p>
+                                                        <p> 2、另需退还物流公司收取的其它费用。</p>
+                                                        <p class="daily-deliveradjust-ywb">有保：</p>
+                                                        <p>  1、按实际价值进行赔偿，最高不超过投保金额，保价最高限额5000元。</p>
+                                                        <p> 2、另需退还除保价费以外的其它费用。</p>
+                                                    </div>
+                                                </i>
+                                          
+                                                
+                                        </span>
+
+
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                        <span> 无保价<=1000元保价[1%]
+                                            <i class="iconfont iconprompt" data-toggle="tooltip"
+                                               data-placement="top" title="">
+                                            <div class="daily-deliveradjust-tips">
+                                                <p class="daily-deliveradjust-ywb">无保：</p>
+                                                <p>  1、按实际价值进行赔偿，最高不超过1000元。</p>
+                                                <p> 2、另需退还物流公司收取的其它费用。</p>
+                                                <p class="daily-deliveradjust-ywb">有保：</p>
+                                                <p>  1、按实际价值进行赔偿，最高不超过投保金额，保价最高限额5000元。</p>
+                                                <p> 2、另需退还除保价费以外的其它费用。</p>
+                                            </div>
+                                        </i>
+                                        </span>
+                            </div>
+                        </td>
+                        <td>
+                            <a class="daily-deliveradjust-chose" href="#">选择</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 发布 -->
+            <div class="daily-deliveradjust-release">
+                <button>发布</button>
+            </div>
+
 
         </div>
     </section>
@@ -437,12 +460,21 @@
         Copyright © 2021 博导股份. All rights reserved.
     </section>
     <!-- 版权 -->
+
+
 </div>
 <script src="../../script/jquery.min.js"></script>
 <script src="../../resources/bootstrap/js/bootstrap.js"></script>
 <script src="../../script/base.js"></script>
 <script src="../../script/daily.js"></script>
-<script src="../../resources/layer/layer.js"></script>
+<script>
+    $(function () {
 
+        $('.iconprompt').click(function () {
+            $(this).children('.daily-deliveradjust-tips').fadeToggle(800);
+        })
+    })
+</script>
 </body>
+
 </html>

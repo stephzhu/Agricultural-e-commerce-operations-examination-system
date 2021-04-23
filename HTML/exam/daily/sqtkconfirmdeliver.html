@@ -496,14 +496,17 @@
 
     $('.daily-orderdet-info .nav-tabs li').click(function (e) {
         var tabIndex=$(this).index()
-        // alert(tabIndex)
+
         if (tabIndex ==2){
             $('.daily-orderdet-info .nav-tabs li').eq(0)
                 .children('a').css('border-right','0')
-        }else if(tabIndex ==1){
+        }else if(tabIndex == 1){
             $('.daily-orderdet-info .nav-tabs li').eq(0)
-                .children('a').css('border-right','1px solid #dcdfe6')
+                .children('a').css('border-right','1px solid #dcdfe6');
+            $('.daily-orderdet-info .nav-tabs li').eq(1).children('a').css('border-right','0!important;')
         }else{
+
+            $('.daily-orderdet-info .nav-tabs  li').eq(1).children('a').css('border-right','0;')
             $('.daily-orderdet-info .nav-tabs li').eq(0)
                 .children('a').css('border-right','0')
         }
